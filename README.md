@@ -1,6 +1,8 @@
 # WikiHopper
 A program to find the shortest path between two Wikipedia articles.
 
+![image](https://user-images.githubusercontent.com/46038297/192924634-666cc76a-08a1-498f-aae7-1991253084fc.png)
+
 # Usage
 1. Clone the repository
 2. Run `make`. <br>
