@@ -36,3 +36,6 @@ Note that some paths may not still work, as Wikipedia is often changed, and the 
 2. [Afghanistan](https://en.wikipedia.org/wiki/Afghanistan)
 3. [Voice of America](https://en.wikipedia.org/wiki/Voice_of_America)
 4. [Linux](https://en.wikipedia.org/wiki/Linux)
+
+# Method
+The program uses a iterative breadth-first search to traverse the article graph, and a hashmap for fast retreival. Articles are first loaded from the text file into an `Article` object, which contains the article name, and a vector of pointers to other `Article` objects that this one links to within Wikipedia. These objects are then put into an `unordered_map`, so they can be found in constant time to determine if an article exists or not. The breadth-first search then finds the shortest path between nodes, in a relatively fast manner.
